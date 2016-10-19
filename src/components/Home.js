@@ -32,7 +32,7 @@ const Home = React.createClass({
       ]
     })
   },
-  onInverseUCC (e) {
+  handleInverseUCC (e) {
     e.preventDefault()
     const [left, right] = this.state.selectedCurrencies
     this.setState({
@@ -58,7 +58,7 @@ const Home = React.createClass({
           isLoading={this.state.isLoading}
           onUpdateAmount={this.handleUpdateAmount}
           onUpdateCurrency={this.handleUpdateCurrency}
-          onInverseUCC={this.onInverseUCC}
+          onInverseUCC={this.handleInverseUCC}
            />
       </div>
     )
